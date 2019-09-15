@@ -22,11 +22,12 @@ To get autograded on gradescope, you program can't print anything.
 
 Thus, please comment out the main function call, if you are submitting for auto grading.
 
-'''
+
 def main():
     print(has_duplicate([0,6,2,4,9]))   # False
 
     print(has_duplicate([0,6,2,4,9,1,2]))   # True
 
-#if __name__ == '__main__':
-    #main()
+if __name__ == '__main__':
+    main()
+'''

@@ -21,7 +21,7 @@ To get autograded on gradescope, you program can't print anything.
 
 Thus, please comment out the main function call, if you are submitting for auto grading.
 
-'''
+
 def main():
     print(largest_ten([9,8,6,4,22,68,96,212,52,12,6,8,99]))
 
@@ -29,4 +29,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
+'''    

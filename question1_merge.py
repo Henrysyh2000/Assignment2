@@ -28,7 +28,7 @@ To get autograded on gradescope, you program can't print anything.
 
 Thus, please comment out the main function call, if you are submitting for auto grading.
 
-'''
+
 def main():
     print([i for i in merge("what",range(100,105))])
     print([i for i in merge(range(5),range(100,101))])
@@ -36,3 +36,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+'''
