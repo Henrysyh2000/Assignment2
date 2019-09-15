@@ -7,8 +7,14 @@ def largest_ten(list1):
     
     :return: List -- largest ten elements in list list1, as a new size 10 list. (Order doesn't matter.)
     """
-    pass
-
+    ten = list1[:10]
+    ten.sort()
+    print(ten)
+    for i in list1[10:]:
+        if i > ten[0]:
+            ten[0] = i
+            ten.sort()
+    return ten
 '''
 Note: 
 To get autograded on gradescope, you program can't print anything.
