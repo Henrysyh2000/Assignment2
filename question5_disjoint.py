@@ -7,16 +7,20 @@ def three_way_disjoint(l1, l2, l3):
     :return: True if l1,l2,l3 are disjoint.
     False if l1,l2,l3 are not disjoint.
     """
-    pass
-
-
+    total = l1 + l2 + l3
+    total.sort()
+    for i in range(0, len(total) - 2):
+        if total[i] == total[i + 1] == total[i + 2]:
+            return False
+    return True
+        
 '''
 Note: 
 To get autograded on gradescope, you program can't print anything.
 
 Thus, please comment out the main function call, if you are submitting for auto grading.
 
-'''
+
 def main():
     l1 = [1,2,3,4,5]
     l2 = [6,7,8,9,10,11,12]
@@ -28,3 +32,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+'''
