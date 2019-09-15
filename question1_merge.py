@@ -7,9 +7,20 @@ def merge(I1, I2):
     :param I2: Iterable -- the second iterable object. Can be a string, tuple, etc
 
     :return: List -- alternately merged I1, I2 elements in a list.
-    """      
-    pass
-
+    """
+    res = []
+    index = 0      
+    while index < min(len(I1), len(I2)):
+        res.append(I1[index])
+        res.append(I2[index])
+        index += 1
+    if len(I1) > len(I2):
+        for i in range(index, len(I1)):
+            res.append(I1[i])
+    elif len(I2) > len(I1):
+        for i in range(index, len(I2)):
+            res.append(I2[i])
+    return res
 
 '''
 Note: 
